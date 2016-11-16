@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>new</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="swiper/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="swiper/animate.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jCanvaScript.1.5.18.js"></script>
+    <script src="swiper/swiper-3.3.1.jquery.min.js"></script>
+    <script src="swiper/swiper.animate1.0.2.min.js"></script>
+    <style>
+        html{width:100%;height:100%;}
+        body{font-family: "iconfont";width:100%;height:100%;}
+        a{color:#00548A;}
+        a:hover{text-decoration: none;color:#00548A;}
+
+        nav{z-index:999;width:100%;background: #00548A;height:44px;line-height: 44px;text-align: center;color:#fff;font-size: 20px;position: fixed;top:0;}
+        nav div{float:left;}
+        nav div:nth-child(1){width:15%}
+        nav div:nth-child(2){width:70%}
+        nav div:nth-child(3){width:15%}
+
+        article{color:#00548A;text-align:center;width:100%;height:100%;margin:44px 0 60px;overflow-y: scroll;background: url("img/bc-2.png");background-size: 100%;}
+        article .swiper-container{width:90%;border: 2px solid #fff;border-radius: 10px;margin: 5% auto;}
+        article .swiper-wrapper img{width:100%;border-radius: 10px;}
+        article>ul{width:90%;margin:0 auto;}
+        article>ul>li{width:30%;height:15ch;margin-left:2.5%;float: left;border: 2px solid #00548A;border-radius: 10px;margin-bottom: 5%;box-shadow: 0 0 8px 1px #fff inset;}
+        article>ul>li div{border-bottom: 1px solid #fff;font-size:25px;line-height:5ch;}
+        article>ul>li i{font-style: normal;font-size:13px;line-height:20px;}
+        article hr{margin: 5%;}
+        article p{width:90%;text-align: right;margin: 0 auto;}
+
+        footer{width:100%;background: #00548A;height:60px;text-align: center;color:#fff;font-size: 20px;padding: 10px 0;
+        position: fixed;bottom: 0;z-index: 999;}
+        footer>div{width:25%;float: left;font-size:25px;}
+        footer>div span{display:block;font-size:11px;line-height: 11px;margin-top: 2px;}
+        footer>div i{display:block;font-style:normal;font-size: 25px;line-height: 25px;}
+    </style>
+</head>
+<body>
+<nav class="clr">
+    <div id="index">&#xe638;</div>
+    <div>主页</div>
+    <div id="login">&#xe63d;</div>
+</nav>
+<article>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div id="wel" class="swiper-slide"><img src="img/1.jpg" alt=""/></div>
+            <div id="we2" class="swiper-slide"><img src="img/2.jpg" alt=""/></div>
+            <div id="we3" class="swiper-slide"><img src="img/3.jpg" alt=""/></div>
+            <div id="we4" class="swiper-slide"><img src="img/4.jpg" alt=""/></div>
+        </div>
+        <div class="swiper-pagination"></div><!-- 如果需要分页器 -->
+    </div>
+    <ul class="clr">
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+        <li><a href="#"><div>&#xe605;</div><i>团队介绍</i></a></li>
+    </ul>
+    <hr/>
+    <p>版本号：Record&nbsp;1.0.1</p>
+    <p>2016..10.11</p>
+</article>
+<footer>
+    <div id="index"><i>&#xe637;</i><span>主页</span></div>
+    <div id="record"><i>&#xe63b;</i><span>记录</span></div>
+    <div id="shopping"><i>&#xe63e;</i><span>周边</span></div>
+    <div id="me"><i>&#xe605;</i><span>我</span></div>
+</footer>
+</body>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        autoplay:2000,
+
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        }
+    })
+</script>
+<script src="js/mui.min.js"></script>
+<script src="js/a.js"> </script>
+
+</html>

@@ -1,0 +1,64 @@
+{
+  "record.html": {
+    "resources": [
+      "live.html",
+      "img/ms.png"
+    ],
+    "refer": [
+      "live.html"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "css/font.css",
+      "img/2.jpg",
+      "img/1.jpg",
+      "img/4.jpg",
+      "ttf/iconfont.ttf",
+      "img/3.jpg"
+    ],
+    "refer": [
+      "record.html"
+    ]
+  },
+  "record-new.html": {
+    "resources": [
+      "bootstrap/css/bootstrap.min.css",
+      "swiper/animate.css",
+      "img/bc-2.png",
+      "swiper/swiper.animate1.0.2.min.js",
+      "swiper/swiper-3.3.1.jquery.min.js",
+      "img/bc-3.png",
+      "js/jquery-3.1.0.min.js",
+      "css/index.css",
+      "js/jCanvaScript.1.5.18.js",
+      "index.html",
+      "img/new-2-1.png",
+      "img/new-3-1.jpg",
+      "css/global.css",
+      "swiper/swiper-3.3.1.min.css",
+      "img/new-1-1.png",
+      "img/wel.png",
+      "img/bc-1.png"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "live.html": {
+    "resources": [
+      "life.html"
+    ],
+    "refer": [
+      "life.html"
+    ]
+  },
+  "life.html": {
+    "resources": [
+      "login.html"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  }
+}
